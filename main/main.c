@@ -80,7 +80,7 @@ int main() {
 
             // Leitura da temperatura
             if (mpu6050_read_temp(imu_config, &temp_raw)) {
-                temperature = (temp_raw / 340.0) + 36.53; // Conversão para graus Celsius
+                 float temperature = (temp_raw / 340.0) + 36.53;
                 printf("Temperatura: %.2f°C\n", temperature);
             } else {
                 printf("Falha ao ler a temperatura\n");
