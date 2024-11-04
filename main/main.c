@@ -59,7 +59,6 @@ int main() {
         int16_t accel[3];
         int16_t gyro[3];
         int16_t temp_raw;
-        float temperature;
 
        // if (f_irq_mpu) {
             f_irq_mpu = 0; // Reseta a flag da interrupção
